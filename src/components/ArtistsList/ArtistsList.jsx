@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {ArtistCard} from '../ArtistCard/ArtistCard.jsx';
 import './ArtistsList.css';
 
