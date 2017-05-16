@@ -3,10 +3,9 @@ import PropTypes from 'prop-types';
 import {ArtistCard} from '../ArtistCard/ArtistCard.jsx';
 import './ArtistsList.css';
 
-export const ArtistsList = (props) => {
+const ArtistsList = ({artists}) => {
 
-    let cards = props
-        .artists
+    let cards = artists
         .map(artist => {
             return (<ArtistCard key={artist.id} artist={artist}/>);
         });
@@ -17,3 +16,9 @@ export const ArtistsList = (props) => {
         </div>
     );
 };
+
+ArtistsList.propTypes = {
+    artists: PropTypes.array.isRequired
+};
+
+export default ArtistsList

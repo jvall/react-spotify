@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import SearchArtistsForm from './SearchArtistsForm/SearchArtistsForm.jsx';
 import {ArtistsList} from '../ArtistsList/ArtistsList.jsx';
 
-const SearchArtistsPresenter = (props) => {
+const SearchArtistsPresenter = ({handleChange, searchResults}) => {
     return (
         <div>
-            <SearchArtistsForm handleChange={props.handleChange}/>
-            <ArtistsList artists={props.searchResults}/>
+            <SearchArtistsForm handleChange={handleChange}/>
+            <ArtistsList artists={searchResults}/>
         </div>
     );
 };
