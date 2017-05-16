@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SearchArtistsForm from './SearchArtistsForm/SearchArtistsForm.jsx';
-import {ArtistsList} from '../ArtistsList/ArtistsList.jsx';
+import ArtistsList from '../ArtistsList/ArtistsList.jsx';
 
 const SearchArtistsPresenter = ({handleChange, searchResults}) => {
     return (
