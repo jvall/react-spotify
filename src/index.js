@@ -1,20 +1,19 @@
 import React from 'react';
-import {createStore, applyMiddleware} from 'redux';
-import thunk from 'redux-thunk';
-import ReactDOM from 'react-dom';
-import {createEpicMiddleware} from 'redux-observable';
-import App from './App';
+import { render } from 'react-dom';
 import './index.css';
 
 import {Provider} from 'react-redux'
-import rootReducer from './reducers';
-import rootEpic from './epics';
 
-const epicMiddleware = createEpicMiddleware(rootEpic);
+import configureStore from './store/configureStore';
+import App from './components/App';
+import SearchArtists from './containers/SearchArtists/SearchArtists.jsx';
+import LikedArtists from './containers/LikedArtists/LikedArtists.jsx';
 
-const store = createStore(rootReducer, applyMiddleware(thunk), applyMiddleware(epicMiddleware));
+const store = configureStore();
 
-ReactDOM.render(
+render(
   <Provider store={store}>
-  <App/>
-</Provider>, document.getElementById('root'));
+    <App />
+  </Provider>, 
+  document.getElementById('root')
+);

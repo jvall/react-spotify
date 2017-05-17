@@ -2,7 +2,6 @@ import * as actions from '../actions/artistsActions';
 import * as types from '../types/artistsTypes';
 import * as http from '../ajax';
 import {Observable} from 'rxjs/Observable';
-import {ajax} from 'rxjs/observable/dom/ajax';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/switchMap';
