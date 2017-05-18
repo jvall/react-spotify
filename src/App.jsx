@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./Navigation/Navigation.jsx";
 import SearchArtists from "../containers/SearchArtists/SearchArtists.jsx";
@@ -27,3 +27,5 @@ const App = props => {
     </Router>
   );
 };
+
+export default App;
