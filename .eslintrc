@@ -1,3 +1,6 @@
 {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+        "prefer-stateless-function": "error"
+    }
 }
