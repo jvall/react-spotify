@@ -1,0 +1,15 @@
+exports[`<ArtistCard /> renders correctly 1`] = `
+<div
+  className="ArtistCard">
+  <img
+    src="test" />
+  <div
+    className="name">
+    test
+  </div>
+  <div
+    className="genres">
+    test, test
+  </div>
+</div>
+`;
