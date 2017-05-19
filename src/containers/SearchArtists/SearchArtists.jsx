@@ -3,10 +3,13 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types';
 import SearchArtistsPresenter from '../../components/SearchArtists/SearchArtistsPresenter.jsx';
 
-import {searchArtists} from '../../actions/artistsActions';
+import {searchArtists, likeArtist, unlikeArtist} from '../../actions/artistsActions';
 
 const mapStateToProps = (state) => {
-    return {searchResults: state.artists.searchResults};
+    return {
+        searchResults: state.artists.searchResults,
+        likedArtists: state.artists.likedArtists
+    };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -14,6 +17,12 @@ const mapDispatchToProps = (dispatch) => {
         handleChange: (event) => {
             event.preventDefault();
             dispatch(searchArtists(event.target.value));
+        },
+        likeArtist: (artist) => {
+            dispatch(likeArtist(artist));
+        },
+        unlikeArtist: (artist) => {
+            dispatch(unlikeArtist(artist));
         }
     };
 };

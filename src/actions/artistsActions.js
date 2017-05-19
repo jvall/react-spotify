@@ -11,3 +11,11 @@ export const searchArtistsSuccess = (payload) => {
 export const searchArtistsFail = (payload) => {
     return {type: types.SEARCH_ARTISTS_FAIL, payload};
 };
+
+export const likeArtist = (payload) => {
+    return {type: types.LIKE_ARTIST, payload}
+};
+
+export const unlikeArtist = (payload) => {
+    return {type: types.UNLIKE_ARTIST, payload}
+}
