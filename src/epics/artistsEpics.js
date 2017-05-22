@@ -1,12 +1,11 @@
 import * as actions from "../actions/artistsActions";
 import * as types from "../types/artistsTypes";
-import * as http from "../ajax";
 import "rxjs/add/operator/debounceTime";
 import "rxjs/add/operator/filter";
 import "rxjs/add/operator/switchMap";
 import "rxjs/add/operator/map";
 
-export const searchForArtists = (action$, store) => {
+export const searchForArtists = (action$, store, http) => {
   return action$
     .ofType(types.SEARCH_ARTISTS)
     .filter(action => action.payload && action.payload.length > 0)
