@@ -24,11 +24,20 @@ describe('<LikedArtistsPresenter />', () => {
         }
     ];
 
+    const likeArtist = jest.fn();
+    const unlikeArtist = jest.fn();
+
     it('renders itself without crashing', () => {
-        shallow(<LikedArtistsPresenter artists={artists} />);
+        shallow(<LikedArtistsPresenter 
+            likedArtists={artists}
+            likeArtist={likeArtist}
+            unlikeArtist={unlikeArtist} />);
     });
 
     it('renders itself and children without crashing', () => {
-        mount(<LikedArtistsPresenter artists={artists} />);
+        mount(<LikedArtistsPresenter 
+            likedArtists={artists}
+            likeArtist={likeArtist}
+            unlikeArtist={unlikeArtist} />);
     });
 });

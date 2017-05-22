@@ -14,12 +14,26 @@ describe('<ArtistCard />', () => {
         'genres': ['test', 'test']
     };
 
+    const likeArtist = jest.fn();
+    const unlikeArtist=jest.fn();
+
     it('renders itself without crashing', () => {
-        shallow(<ArtistCard artist={artist}/>);
+        shallow(<ArtistCard 
+            artist={artist}
+            likedArtists={[]}
+            likeArtist={likeArtist}
+            unlikeArtist={unlikeArtist}
+        />);
     });
 
     it('renders correctly', () => {
-        const tree = renderer.create(<ArtistCard artist={artist}/>);
-        expect(tree).toMatchSnapshot();
+        const wrapper = renderer.create(<ArtistCard 
+            artist={artist}
+            likedArtists={[]}
+            likeArtist={likeArtist}
+            unlikeArtist={unlikeArtist}
+        />);
+        
+        expect(wrapper).toMatchSnapshot();
     });
 });

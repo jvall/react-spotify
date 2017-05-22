@@ -11,5 +11,9 @@ exports[`<ArtistCard /> renders correctly 1`] = `
     className="genres">
     test, test
   </div>
+  <button
+    onClick={[Function]}>
+    Like
+  </button>
 </div>
 `;
