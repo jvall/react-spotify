@@ -33,8 +33,7 @@ describe('<ArtistsList />', () => {
             artists={artists}
             likedArtists={[]}
             likeArtist={likeArtist}
-            unlikeArtist={unlikeArtist}
-        />);
+            unlikeArtist={unlikeArtist} />);
     });
 
     it('renders itself and children without crashing', () => {
@@ -42,8 +41,7 @@ describe('<ArtistsList />', () => {
             artists={artists}
             likedArtists={[]}
             likeArtist={likeArtist}
-            unlikeArtist={unlikeArtist}
-        />);
+            unlikeArtist={unlikeArtist} />);
     });
 
     it('should contain 2 ArtistCards', () => {
@@ -51,8 +49,7 @@ describe('<ArtistsList />', () => {
             artists={artists}
             likedArtists={[]}
             likeArtist={likeArtist}
-            unlikeArtist={unlikeArtist}
-        />);
+            unlikeArtist={unlikeArtist} />);
         expect(wrapper.find(ArtistCard)).toHaveLength(2);
     }); 
 });

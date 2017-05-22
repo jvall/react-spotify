@@ -25,8 +25,7 @@ describe('<SearchArtistsPresenter />', () => {
             handleChange={handleChange} 
             likeArtist={likeArtist} 
             unlikeArtist={unlikeArtist}
-            likedArtists={[]}
-        />);
+            likedArtists={[]} />);
     });
 
     it('should have 1 search form', () => {
@@ -35,8 +34,7 @@ describe('<SearchArtistsPresenter />', () => {
             handleChange={handleChange} 
             likeArtist={likeArtist} 
             unlikeArtist={unlikeArtist}
-            likedArtists={[]}
-        />);
+            likedArtists={[]} />);
 
         expect(wrapper.find(SearchArtistsForm)).toHaveLength(1);
     });

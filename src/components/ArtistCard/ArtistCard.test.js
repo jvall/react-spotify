@@ -22,8 +22,7 @@ describe('<ArtistCard />', () => {
             artist={artist}
             likedArtists={[]}
             likeArtist={likeArtist}
-            unlikeArtist={unlikeArtist}
-        />);
+            unlikeArtist={unlikeArtist} />);
     });
 
     it('renders correctly', () => {
@@ -31,8 +30,7 @@ describe('<ArtistCard />', () => {
             artist={artist}
             likedArtists={[]}
             likeArtist={likeArtist}
-            unlikeArtist={unlikeArtist}
-        />);
+            unlikeArtist={unlikeArtist} />);
         
         expect(wrapper).toMatchSnapshot();
     });
