@@ -9,5 +9,5 @@ describe('Artist Actions', () => {
             payload
         }
         expect(actions.searchArtists(payload)).toEqual(expectedAction);
-    })
-})
+    });
+});

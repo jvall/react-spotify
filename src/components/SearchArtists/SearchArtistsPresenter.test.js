@@ -15,8 +15,7 @@ describe('<SearchArtistsPresenter />', () => {
             handleChange={handleChange} 
             likeArtist={likeArtist} 
             unlikeArtist={unlikeArtist}
-            likedArtists={[]}
-        />);
+            likedArtists={[]} />);
     });
 
     it('renders itself and children without crashing', () => {
