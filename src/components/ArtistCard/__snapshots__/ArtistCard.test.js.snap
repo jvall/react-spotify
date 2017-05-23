@@ -1,18 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<ArtistCard /> renders correctly 1`] = `
 <div
-  className="ArtistCard">
+  className="ArtistCard"
+>
   <img
-    src="test" />
+    src="test"
+  />
   <div
-    className="name">
+    className="name"
+  >
     test
   </div>
   <div
-    className="genres">
+    className="genres"
+  >
     test, test
   </div>
   <button
-    onClick={[Function]}>
+    onClick={[Function]}
+  >
     Like
   </button>
 </div>

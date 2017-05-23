@@ -35,4 +35,5 @@ ArtistCard.propTypes = {
     likedArtists: PropTypes.array.isRequired
 }
 
-export default ArtistCard
+export default ArtistCard;
+
